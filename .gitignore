@@ -1,1 +1,8 @@
 *.swp
+*.pyc
+Makefile
+themes/
+fabfile.py
+output/
+create-plugin.txt
+develop_server.sh
