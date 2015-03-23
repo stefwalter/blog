@@ -4,13 +4,15 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: creating-plugins-for-the-cockpit-user-interface
 
+*Note: This post has been updated for changes in Cockpit 0.41 and later.*
+
 [Cockpit is a user interface for servers](http://cockpit-project.org). And you can add stuff to that user interface. Cockpit is internally built of various components. Each component is HTML, with Javascript logic that makes it work, and CSS to make it pretty.
 
 It's real easy to create these components. Tools are components that show up in the *Tools* menu in Cockpit:
 
 ![Tools menu](images/cockpit-tools-default.png)
 
-For example the *Terminal* that you see there is implemented as a tool. But lets make ourselves another one. For this tutorial you'll need Cockpit 0.30. You can install it in [Fedora 21](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
+For example the *Terminal* that you see there is implemented as a tool. But lets make ourselves another one. For this tutorial you'll need Cockpit 0.41. You can install it in [Fedora 21](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
 
 So break out your terminal, lets make a package called *pinger* that checks whether your server has network connectivity to the Internet by pinging another host. Nothing too fancy. We'll just be spawning a process on the server to do the work. I've prepared it for you as [an example here](http://stef.thewalter.net/files/pinger.tgz), and we can look it over, and modify it. To download the example to your current directory:
 
@@ -68,9 +70,9 @@ Lets take a look at the pinger HTML, and see how it works.
     <head>
         <title>Pinger</title>
         <meta charset="utf-8">
-        <link href="../base/cockpit.css" type="text/css" rel="stylesheet">
-        <script src="../base/jquery.js"></script>
-        <script src="../base/cockpit.js"></script>
+        <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+        <script src="../base1/jquery.js"></script>
+        <script src="../base1/cockpit.js"></script>
     </head>
     <body>
         <div class="container-fluid" style='max-width: 400px'>
@@ -123,8 +125,8 @@ Lets take a look at the pinger HTML, and see how it works.
 First we include `jquery.js` and `cockpit.js`. `cockpit.js` defines the basic API for interacting with the system, as well as Cockpit itself. You can find [detailed documentation here](http://files.cockpit-project.org/guide/latest/api-cockpit.html).
 
     :::html
-    <script src="../base/jquery.js"></script>
-    <script src="../base/cockpit.js"></script>
+    <script src="../base1/jquery.js"></script>
+    <script src="../base1/cockpit.js"></script>
 
 We also include the cockpit.css file to make sure the look of our tool matches that of Cockpit. The HTML is pretty basic, defining a little form with a field to type an address, a button to click to start the pinging, and an area to present output and results.
 

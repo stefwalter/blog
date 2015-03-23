@@ -4,9 +4,11 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: using-dbus-from-javascript-in-cockpit
 
+*Note: This post has been updated for changes in Cockpit 0.41 and later.*
+
 [Cockpit is a user interface for servers](http://cockpit-project.org). As we covered in the [last tutorial](http://stef.thewalter.net/creating-plugins-for-the-cockpit-user-interface.html) you can add user interface component to Cockpit, and build your own parts of the Server UI.
 
-Much of Cockpit interacts with the server using DBus. We have a powerful yet simple API for doing that, and you should use DBus too when building your own Cockpit user interfaces. For this tutorial you'll need at least Cockpit 0.31. A few tweaks landed in that release to solve a couple rough edges we had in our DBus support. You can install it in [Fedora 21](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
+Much of Cockpit interacts with the server using DBus. We have a powerful yet simple API for doing that, and you should use DBus too when building your own Cockpit user interfaces. For this tutorial you'll need at least Cockpit 0.41. A few tweaks landed in that release to solve a couple rough edges we had in our DBus support. You can install it in [Fedora 21](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
 
 Here we'll make a package called *zoner* which lets you set the time zone of your server. We use the systemd [timedated DBus API](http://www.freedesktop.org/wiki/Software/systemd/timedated/) to do actually switch time zones.
 
@@ -47,9 +49,9 @@ You should see your timezone on your screen update immediately to reflect the ne
     <head>
         <title>Time Zone</title>
         <meta charset="utf-8">
-        <link href="../base/cockpit.css" type="text/css" rel="stylesheet">
-        <script src="../base/jquery.js"></script>
-        <script src="../base/cockpit.js"></script>
+        <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+        <script src="../base1/jquery.js"></script>
+        <script src="../base1/cockpit.js"></script>
     </head>
     <body>
         <div class="container-fluid" style='max-width: 400px'>
@@ -101,8 +103,8 @@ You should see your timezone on your screen update immediately to reflect the ne
 First we include `jquery.js` and `cockpit.js`. `cockpit.js` defines the basic API for interacting with the system, as well as Cockpit itself. You can find [detailed documentation here](http://files.cockpit-project.org/guide/latest/api-cockpit.html).
 
     :::html
-    <script src="../base/jquery.js"></script>
-    <script src="../base/cockpit.js"></script>
+    <script src="../base1/jquery.js"></script>
+    <script src="../base1/cockpit.js"></script>
 
 We also include the cockpit.css file to make sure the look of our tool matches that of Cockpit. The HTML is pretty basic, defining a little form where the current timezone is shown, a field to type an address, a button to click change to a new one, and an area to show errors.
 

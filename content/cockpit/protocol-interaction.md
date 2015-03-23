@@ -4,6 +4,8 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: protocol-for-web-access-to-system-apis
 
+*Note: This post has been updated for changes in Cockpit 0.44 and later.*
+
 A Linux system today has a lot of local system configuration APIs. I'm not talking about library APIs here, but things like DBus services, command/scripts to be executed, or files placed in various locations. All of these constitute the API by which we configure a Linux system. In [Cockpit](http://cockpit-project.org) we access these APIs from a web browser (after authentication of course).
 
 How do we access the system APIs? The answer is the `cockpit-bridge` tool. It proxies requests from the Cockpit user interface, running in a web browser, to the system. Typically the `cockpit-bridge` runs as the logged in user, in a user session. It has similar permissions and capabilities as if you had used `ssh` to log into the system.
@@ -23,7 +25,7 @@ The protocol that the web browser uses is a [message based protocol](https://git
 
 The `cockpit-bridge` tool speaks this protocol on its standard in and standard output. The `cockpit-ws` process hosts the WebSocket and passes the messages to `cockpit-bridge` for processing.
 
-**Following along:** In order to follow along with the stuff below, you'll need at least Cockpit 0.35. The protocol is not yet frozen, and we merged some cleanup recently. You can install it on [Fedora 21 using a COPR](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
+**Following along:** In order to follow along with the stuff below, you'll need at least Cockpit 0.44. The protocol is not yet frozen, and we merged some cleanup recently. You can install it on [Fedora 21 using a COPR](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
 
 Channels
 --------
@@ -83,7 +85,7 @@ The `"echo"` channel type just sends the messages you send to the `cockpit-bridg
 
 Now we're ready to play ... Well almost.
 
-The very first control message sent to and from `cockpit-bridge` must be an `"init"` message containing a version number. Currently that version number is `0` to indicate that protocol is not yet stable:
+The very first control message sent to and from `cockpit-bridge` shuld be an `"init"` message containing a version number. Currently that version number is `0` to indicate that protocol is not yet stable:
 
 <pre>
 
@@ -104,9 +106,6 @@ So combining our knowledge so far, we can run the following:
 In this debugging mode sent by `cockpit-bridge` will be bold in your terminal. Now paste the following in:
 
 <pre>
-
-{ "command": "init", "version": 0 }
-----
 
 { "command": "open", "channel": "mychannel", "payload": "echo" }
 ----
