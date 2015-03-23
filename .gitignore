@@ -6,3 +6,4 @@ fabfile.py
 output/
 create-plugin.txt
 develop_server.sh
+cache/
