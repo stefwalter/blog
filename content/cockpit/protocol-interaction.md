@@ -4,7 +4,7 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: protocol-for-web-access-to-system-apis
 
-*Note: This post has been updated for changes in Cockpit 0.44 and later.*
+*Note: This post has been updated for changes in Cockpit 0.48 and later.*
 
 A Linux system today has a lot of local system configuration APIs. I'm not talking about library APIs here, but things like DBus services, command/scripts to be executed, or files placed in various locations. All of these constitute the API by which we configure a Linux system. In [Cockpit](http://cockpit-project.org) we access these APIs from a web browser (after authentication of course).
 
@@ -25,7 +25,7 @@ The protocol that the web browser uses is a [message based protocol](https://git
 
 The `cockpit-bridge` tool speaks this protocol on its standard in and standard output. The `cockpit-ws` process hosts the WebSocket and passes the messages to `cockpit-bridge` for processing.
 
-**Following along:** In order to follow along with the stuff below, you'll need at least Cockpit 0.44. The protocol is not yet frozen, and we merged some cleanup recently. You can install it on [Fedora 21 using a COPR](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
+**Following along:** In order to follow along with the stuff below, you'll need at least Cockpit 0.48. The protocol is not yet frozen, and we merged some cleanup recently. You can install it on [Fedora 21 using a COPR](https://lists.fedorahosted.org/pipermail/cockpit-devel/2014-November/000196.html) or [build it from git](https://github.com/cockpit-project/cockpit/blob/master/HACKING.md).
 
 Channels
 --------
@@ -85,13 +85,13 @@ The `"echo"` channel type just sends the messages you send to the `cockpit-bridg
 
 Now we're ready to play ... Well almost.
 
-The very first control message sent to and from `cockpit-bridge` shuld be an `"init"` message containing a version number. Currently that version number is `0` to indicate that protocol is not yet stable:
+The very first control message sent to and from `cockpit-bridge` shuld be an `"init"` message containing a version number. That version number is `1` for the forseeable future.
 
 <pre>
 
 {
   "command": "init",
-  "version": 0
+  "version": 1
 }
 </pre>
 
@@ -197,9 +197,7 @@ The process will send its output in the payload of one or more messages of the `
 Doing it over a WebSocket
 -------------------------
 
-Obviously in Cockpit we send all of these messages from the browser through a WebSocket hosted by `cockpit-ws`. `cockpit-ws` then passes them on to `cockpit-bridge`. There's [an issue that needs fixing](https://github.com/cockpit-project/cockpit/pull/1608) before others can use the some WebSocket approach. Due to the same origin browser security policy, `cockpit-ws` needs a configuration option to accept requests from web pages it didn't deliver.
-
-I'll post a bit of a demo about using this protocol over a WebSocket when that's ready.
+Obviously in Cockpit we send all of these messages from the browser through a WebSocket hosted by `cockpit-ws`. `cockpit-ws` then passes them on to `cockpit-bridge`. You can communicate this way too, if you [configure Cockpit to accept different Websocket Origins](http://files.cockpit-project.org/guide/cockpit.conf.5.html).
 
 And on it goes
 --------------
