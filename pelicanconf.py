@@ -14,6 +14,8 @@ TIMEZONE = 'Utc'
 
 DEFAULT_LANG = u'en'
 
+SITEURL = 'http://stef.thewalter.net'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
