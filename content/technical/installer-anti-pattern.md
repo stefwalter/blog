@@ -6,15 +6,17 @@ Slug: installer-anti-pattern
 
 ### AKA: the Installer Anti-Pattern
 
-There's a common user experience anti-pattern that pops up all over the place. The 'wizards' in Windows really epitomized this, and hence the anti-pattern is named after them. But it's common elsewhere too, particularly in installers.
-
-Here goes:
+There's a common user experience anti-pattern that pops up all over the place:
 
 <div style="font-size: 120%; line-height: 140%; padding: 1em 3em; background-color: #EEE;">
 Interactive choices offered to the user during an install, creation or setup process are an anti-pattern. The negative consequences are in proportion to the number of configuration choices involved.
 </div>
 
-Or put another way: "Interactive configuration during installation is bad."
+Or put another way: "Interactive configuration during setup is bad."
+
+The 'wizards' in Windows really epitomized this, and hence the anti-pattern is named after them. But it's common elsewhere too, particularly in installers.
+
+![Wizard Anti-Pattern](images/wizard-anti-pattern.png)
 
 Why? There are two negative consequences of interactive configuration during setup:
 
@@ -37,11 +39,7 @@ Now obviously there are immutable aspects of the setup process. And those unfort
 
 It's easy to complain about Windows. Wizard style dialogs ask you a bunch of questions and then create something or perform some job. These wizards are pretty much the worst example of this anti-pattern ... and Windows has a lot of them.
 
-![Wizard Anti-Pattern](images/wizard-anti-pattern.png)
-
-But Windows does get this right in a several other places.
-
-The Windows installer asks minimal questions. Here are all the choices asked during the Windows 2008 Server install: 1) The language, 2) What to install, 4) Where to install it. In my opinion the choice on screen 3) is a kludge related to Windows upgrade brokenness. But in spite of that the installer manages to largely avoid this anti-pattern. Note the lack of a prompt for creating user accounts ... that happens later.
+But Windows does get this right in other places. The Windows installer asks minimal questions. Here are all the choices asked during the Windows 2008 Server install: 1) The language, 2) What to install, 4) Where to install it. In my opinion the choice on screen 3) is a kludge related to Windows upgrade brokenness. But in spite of that the installer manages to largely avoid this anti-pattern. Note the lack of a prompt for creating user accounts ... that happens later.
 
 ![Windows 2008 Installer](images/windows-installer.png)
 
