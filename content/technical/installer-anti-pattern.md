@@ -27,13 +27,13 @@ The first consequence is pretty obvious. Asking the user questions they cannot a
 
 Fix the application, software or operating system so that it does the right thing, or an acceptable default. Then let the user adjust it later if necessary. But don't lazily punt responsibility to the user by asking them to make decisions up front.
 
-The second consequence reqires a little more discussion. When the user configures something during a wizard or setup process, they learn (whether consciously or subconsciously) how to perform that configuration task. This is useless disposable throw-away knowledge. We then force the user to relearn how to do it differently when they want to change that configuration choice. You can almost hear the internal dialog:
+The second consequence requires a little more discussion. When the user configures something during a wizard or setup process, they learn (whether consciously or subconsciously) how to perform that configuration task. This is useless disposable throw-away knowledge. We then force the user to relearn how to do it differently when they want to change that configuration choice. You can almost hear the internal dialog:
 
  * "Wait ... maybe I should have chosen a different time zone ... this is a server after all."
  * "Hmmm, how do I change that? I just clicked that map thingy a moment ago."
  * "I wonder if I should just reinstall so and make a different choice this time?"
 
-Now obviously there are immutable aspects of the setup process. And those unfortunately require the user to make choices. But when something really is immutable it cleanly avoids the second problem above: the user cannot change it. This mitagates the anti-pattern somewhat.
+Now obviously there are immutable aspects of the setup process. And those unfortunately require the user to make choices. But when something really is immutable it cleanly avoids the second problem above: the user cannot change it. This mitigates the anti-pattern somewhat.
 
 ## Examples
 
@@ -56,7 +56,7 @@ A bad example? Sadly most Linux installers end up as pretty bad examples. Operat
 
 But it goes down hill from there. Most interactive Linux installers go wild and present the user with all sorts of choices, and run headlong into this anti-pattern.
 
-Almost all of these configuration choices should happen post install, with a repatable user experience.
+Almost all of these configuration choices should happen post install, with a repeatable user experience.
 
 ## Solution
 
@@ -73,7 +73,7 @@ Which leads us to:
 
     For example, never ask the user to choose between one of several dependencies that the software needs in order to function. Make choices like this on behalf of the user.
 
- 2. Some immutable constants need to be specified by a user, and thus become interactive choices in setup process.
+ 2. Some immutable constants need to be specified by a user, and thus become interactive choices in the setup process.
 
     A user may need to choose a location to install the software, or perhaps a domain name is an immutable property of the system.
 
@@ -83,7 +83,7 @@ Which leads us to:
 
  3. Choices related to configuration options should happen after the install process.
 
-    The user experience for configuring the application or system should be discoverable and usable. It should be obvious to the user where to go to change a configuration option post install. [Hint.](http://cockpit-project.org/)
+    The user experience for configuring the application or system should be discoverable, usable and repeatable. It should be obvious to the user where to go to change a configuration option post install. [Hint.](http://cockpit-project.org/)
 
 The corollary here is to make the system or application have a minimal amount of immutable constants that need to be specified by the user and therefore:
 
