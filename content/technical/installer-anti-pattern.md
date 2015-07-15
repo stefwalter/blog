@@ -50,7 +50,7 @@ Another trivial good example of avoiding this anti-pattern is the *Create new di
 Instead of popping up a dialog asking for the initial directory name, the directory is created and you're then ready to type the name. This has been implemented in various ways, but the core design concept is that the user learns one workflow for naming a directory, whether it's a new directory or one that's renamed.
 
 
-A bad example? Sadly most Linux installers end up as pretty bad examples. Operating system installers are tricky ... mostly because hardware sucks. So we end up asking the user to make choices before they've started to use the system: bad. But as noted above, this is less of a problem for immutable things, such as where to install the operating system's files.
+A bad example? Sadly most Linux installers end up as pretty bad examples. Operating system installers are tricky ... mostly because hardware and file-systems suck. So we end up asking the user to make choices before they've started to use the system: bad. But as noted above, this is less of a problem for immutable things, such as where to install the operating system's files.
 
 ![Fedora Server Installer](images/fedora-22-server-installer.png)
 
