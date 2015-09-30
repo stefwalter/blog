@@ -8,3 +8,4 @@ create-plugin.txt
 develop_server.sh
 cache/
 /*.pid
+*~
