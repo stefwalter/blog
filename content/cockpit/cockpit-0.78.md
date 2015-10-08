@@ -36,7 +36,7 @@ A CPU usage bug in Cockpit 0.77 was fixed.
 
 ### From the future
 
-Marius has done some really cool work on iSCSI. It's not yet in a Cockpit release, but take a peak here:
+Marius has done some really cool work on iSCSI. It's not yet in a Cockpit release, but take a peek here:
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/N1Lw2OVLDoo?rel=0" frameborder="0" allowfullscreen></iframe>
 
