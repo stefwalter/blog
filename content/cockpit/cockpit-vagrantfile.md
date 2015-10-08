@@ -9,7 +9,8 @@ you can test or develop Cockpit. The VM is isolated from your main system so any
 you change via Cockpit will only happen in the VM.
 
 The Vagrant VM mounts the Cockpit package assets from your git repository checkout, so when you make on the
-host system, you can refresh the browser and immediately see the resulting changes.
+host system, you can refresh the browser and immediately see the resulting changes. For changes to
+C code, the Cockpit binaries would have to be rebuilt and testing via Vagrant won't work.
 
 
 ## Getting Started
