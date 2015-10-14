@@ -104,3 +104,11 @@ Rebuild the Vagrant VM like this:
     $ sudo vagrant destroy
     $ sudo vagrant up
 
+
+## Troubleshooting
+
+On Fedora, FirewallD got in the way of Vagrants use of NFS. On my machine, I had to do this
+to get it to work:
+
+    :::text
+    $ sudo firewall-cmd --set-default-zone=trusted
