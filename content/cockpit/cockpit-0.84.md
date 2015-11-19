@@ -1,5 +1,5 @@
 Title: Cockpit 0.83 and 0.84 Released
-Date: 2015-10-28 19:05
+Date: 2015-11-19 11:24
 Tags: cockpit, linux, technical
 Slug: cockpit-0.84
 Summary: Cockpit releases every week. This week it was 0.84
