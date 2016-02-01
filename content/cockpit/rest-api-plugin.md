@@ -4,6 +4,8 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: making-rest-calls-from-javascript-in-cockpit
 
+*Note: This post has been updated for changes in Cockpit 0.90 and later.*
+
 [Cockpit is a user interface for servers](http://cockpit-project.org). In [earlier](http://stef.thewalter.net/creating-plugins-for-the-cockpit-user-interface.html) [tutorials](http://stef.thewalter.net/using-dbus-from-javascript-in-cockpit.html) there's a guide on how to add components to Cockpit.
 
 Not all of the [system APIs use DBus](http://stef.thewalter.net/d-bus-is-powerful-ipc.html). So sometimes we find ourselves in a situation where we have to use REST (which is often just treated as another word for HTTP) to talk to certain parts of the system. For example [Docker has a REST API](https://docs.docker.com/reference/api/docker_remote_api/).

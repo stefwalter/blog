@@ -4,7 +4,7 @@ Category: Cockpit, Linux
 Tags: cockpit, linux
 Slug: creating-plugins-for-the-cockpit-user-interface
 
-*Note: This post has been updated for changes in Cockpit 0.41 and later.*
+*Note: This post has been updated for changes in Cockpit 0.90 and later.*
 
 [Cockpit is a user interface for servers](http://cockpit-project.org). And you can add stuff to that user interface. Cockpit is internally built of various components. Each component is HTML, with Javascript logic that makes it work, and CSS to make it pretty.
 
@@ -30,7 +30,8 @@ Components, and more specifically their HTML and Javascript files, live in packa
                 "label": "Pinger",
                 "path": "ping.html"
             }
-        }
+        },
+        "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'"
     }
 
 The manifest above has a `"tools"` subsection. Each tool is listed in the *Tools* menu by Cockpit. The `"path"` is the name of the HTML file that implements the tool, and the `"label"` is the text to show in the *Tools* menu.
