@@ -22,9 +22,6 @@ Before this is usable by users, the cockpit-ostree package will need to
 (be included in Atomic Host, first on Fedora)[https://bugzilla.redhat.com/show_bug.cgi?id=1292826].
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
 Custom login authentication scripts
 -----------------------------------
 
