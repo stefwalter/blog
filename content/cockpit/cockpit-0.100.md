@@ -17,7 +17,7 @@ Cockpit can now help you troubleshoot [SELinux](http://stopdisablingselinux.com/
 
 There's a new Image Registry user interface. It works with [Atomic Platform](http://www.projectatomic.io/) or [Openshift](https://www.openshift.org/) clusters. By default this shows up in the Cockpit "Cluster" admin dashboard.
 
-But more importantly you can deploy this as a standalone image registry, complete with storage, authentication and an interface. See [projectatomic.io/registry](http://projectatomic.io/registry) for more info.
+But more importantly you can deploy this as a standalone image registry, complete with storage, authentication and an interface. See [www.projectatomic.io/registry](http://www.projectatomic.io/registry) for more info.
 
 Here's a quick demo:
 
