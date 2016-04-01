@@ -9,7 +9,7 @@ Cockpit is the [modern Linux admin interface](http://cockpit-project.org/). Ther
 
 ### SELinux Troubleshooting
 
-Cockpit can help you troubleshoot [SELinux](http://stopdisablingselinux.com/) problems, and show you fixes for repairing the various issues. This is pretty amazing for system admins who really would rather be secure, but keep bumping into operations that SELinux is blocking. There's more to come on both SELinux and troubleshooting in the future. Take a look at what landed in this release:
+Cockpit can now help you troubleshoot [SELinux](http://stopdisablingselinux.com/) problems, and show you fixes for repairing the various issues. This is pretty amazing for system admins who really would rather be secure, but keep bumping into stuff that SELinux is blocking. There's more to come on both SELinux and troubleshooting in the future. Take a look at what landed in this release:
 
 <iframe width="960" height="720" src="https://www.youtube.com/embed/eBGK6qSmnng?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -17,18 +17,15 @@ Cockpit can help you troubleshoot [SELinux](http://stopdisablingselinux.com/) pr
 
 There's a new Image Registry user interface. It works with [Atomic Platform](http://www.projectatomic.io/) or [Openshift](https://www.openshift.org/) clusters. By default this shows up in the Cockpit "Cluster" admin dashboard.
 
-But more importantly you can deploy this as a standalone image registry, complete with storage, authentication and an interface.
+But more importantly you can deploy this as a standalone image registry, complete with storage, authentication and an interface. See [projectatomic.io/registry](http://projectatomic.io/registry) for more info.
 
 Here's a quick demo:
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/VSOAASf1Usw?rel=0" frameborder="0" allowfullscreen></iframe>
 
-See [projectatomic.io/registry](http://projectatomic.io/registry) for more info.
-
-
 ### Storage sliders and more
 
-Marius has been working on cleaning up the storage UI. One of the changes you'll notice is that you can now use a sloider to choose a size for new volumes or file systems, and specify the size units you want to use:
+Marius has been working on cleaning up the storage UI. One of the changes you'll notice is that you can now use a slider to choose a size for new volumes or file systems, and specify the size units you want to use:
 
 ![Storage number slider](images/cockpit-storage-slider.png)
 
