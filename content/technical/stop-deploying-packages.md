@@ -5,7 +5,7 @@ Slug: stop-deploying-packages
 Category: Linux
 Summary: Packages shouldn't be assembled as you deploy a system. You shuold treat tools that assemble packages while deploying a production system are legacy tools.
 
-Packages shouldn't be assembled as you deploy a system to production. You should treat tools that assemble packages while deploying a production system as legacy tools. Here's why.
+Packages shouldn't be assembled as you deploy a system to production. You shouldn't use tools that assemble packages while deploying a production system. Here's why.
 
 <div style="text-align: center">
 <img alt="Be prepared to stop" src="../images/be-prepared-to-stop.jpg">
