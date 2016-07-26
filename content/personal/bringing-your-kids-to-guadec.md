@@ -13,6 +13,6 @@ If you're coming with small kids, I'll bring along some toys, colors,
 and other essentials to the conference. To make that happen, put the age
 of your child in the wiki at the link above.
 
-![Going to GUADEC](images/badge-goingto.png)
+![Going to GUADEC](https://2016.guadec.org/wp-content/uploads/2016/04/badge-goingto.png)
 
 See you there.
