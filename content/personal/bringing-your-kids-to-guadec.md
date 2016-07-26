@@ -7,7 +7,7 @@ If you're coming to GUADEC 2016 and bringing your kids along, there's
 a handy wiki page where you can look at for tips on what to do while
 in Karlsruhe:
 
-[https://wiki.gnome.org/action/edit/GUADEC/2016/Kids](https://wiki.gnome.org/action/edit/GUADEC/2016/Kids)
+[https://wiki.gnome.org/GUADEC/2016/Kids](https://wiki.gnome.org/GUADEC/2016/Kids)
 
 If you're coming with small kids, I'll bring along some toys, colors,
 and other essentials to the conference. To make that happen, put the age
