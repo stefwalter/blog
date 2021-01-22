@@ -1,0 +1,4 @@
+How to set up necessary dependencies:
+
+    $ sudo yum install python3-pelican python3-typogrify
+
