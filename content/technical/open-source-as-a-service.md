@@ -1,5 +1,5 @@
 Title: Your Service is not Open Source
-Date: 2018-02-06 18:35
+Date: 2020-02-07 18:35
 Tags: open source, technical
 Slug: open-source-as-a-service
 Category: Technical
@@ -19,19 +19,22 @@ Some other Open Source services, such as
 or [ElasticSearch](https://www.elastic.co/about/free-and-open) do include
 the tools used to operate/deploy their service. Pause for applause 👏👏👏
 
-But thats is also insufficient to actually enable Open Source.
+But that's also insufficient to actually enable users to become
+contributors effectively.
 
-In order for a user of the service to begin contributing, they must
-first deploy and operate their own clone: Something that they explicitly
-chose not to do when they elected to use the software as a service.
+Much of the value of a service comes from things other than the code.
+It comes from the infrastructure it runs on, the operational processes,
+the monitoring, the backups, the metrics, the high availability, the
+scalability. It comes from the network effect, with other users, with other
+interconnected services, from legal agreements, and so on.
 
-Even if the user becomes an operator, and deploys a such clone, it
-is devoid of their own data, devoid of other users, of connections
-to other services, of infrastructure scalability, pipelines, monitoring,
-backups, ... you name it.
+Any non-toy Service is not reproducible.
 
-In any case, users are certainly not able to iterate on their changes
-to a service against their real world use cases.
+Launching a clone of the service in order to effectively contribute
+is a high barrier. Certain kinds of contributions clearly are possible.
+But contributors are essentially asked to "fork" the above non-code
+aspects of the service in order to iterate on their changes against
+their real world use cases.
 
 What's more, without true Open Source principles, we are missing a
 way to have a community develop with a center of gravity around
@@ -84,23 +87,16 @@ complex Service you wouldn't be able to run your changes, experience your
 changes against real world workflows, much less iterate on them until
 they're good enough to share with others.
 
-Services in the real world are much more than running some code.
-And they're much more than deployment automation scripts. Services
-are interconnected with other services, with data, APIs, legal
-agreements, process, and users, infrastructure, and so much more.
-
-Any non-toy Service is not reproducible.
-
 In reality the threat here is far more fundamental: Users of services
 cannot readily change something in the service not only because the
 processes is operated by someone else ... but because such users of
 a service have explicitly chosen not to be involved in operating
 the software.
 
-If the primary way to use Postgres was as a Service, then that (fabulous)
-project would be starved for contributors. This is because the number
-of contributors in a such a project are a function of some small
-percentage of users deciding to try to make change.
+If the primary way to use [Postgres was as a Service](https://aws.amazon.com/rds/),
+then that (fabulous) project would be starved for contributors. This is
+because the number of contributors in a such a project are a function
+of some small percentage of users deciding to try to make change.
 
 As this mechanism for using software, as a service, takes over the world
 the pool of users who can contribute to Open Source shrinks dramatically.
@@ -146,7 +142,9 @@ Everyone has their own version of continuous delivery. It's hard to
 take an engineering team seriously if they haven't figured out how
 their team members can get a change rapidly deployed.
 
-As Open Source, I don't see us having pulled this off. Not yet.
+As Open Source, we have all the ingredients to have a decisive
+advantage here. To effectively collaborate on services with
+contributors across humanity.
 
 Lets try to craft a playbook to achieve this basic capability
 that drives Open Source: The ability to change code and interact
