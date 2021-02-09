@@ -89,7 +89,7 @@ they're good enough to share with others.
 
 In reality the threat here is far more fundamental: Users of services
 cannot readily change something in the service not only because the
-processes is operated by someone else ... but because such users of
+processes are operated by someone else ... but because such users of
 a service have explicitly chosen not to be involved in operating
 the software.
 
@@ -149,5 +149,4 @@ contributors across humanity.
 Lets try to craft a playbook to achieve this basic capability
 that drives Open Source: The ability to change code and interact
 with that change ... on a service.
-
 
