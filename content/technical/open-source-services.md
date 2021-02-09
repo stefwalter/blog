@@ -3,7 +3,7 @@ Date: 2020-02-07 18:35
 Tags: open source, technical
 Slug: open-source-services
 Category: Technical
-Summary: Open sourcing the code to your SaaS is insufficient. For a service to be truly Open Source, we need to effectively enable users to contribute to the SaaS itself.
+Summary: Open sourcing the code to your SaaS is insufficient. For a service to be truly Open Source, we need to effectively enable users to contribute to the running SaaS itself.
 
 Open Sourcing the code to your SaaS is insufficient to make it
 actually be Open Source. Sounds self-contradictory?
@@ -132,7 +132,7 @@ whether canary deployments, load balancing, continuous delivery,
 infrastructure as code, and so on. It's been hard to find a single
 problem that an existing practice doesn't solve.
 
-It turns out many engineering teams working have come to that same
+It turns out many experienced engineering teams have come to that same
 conclusion. Rapid deployment of changes to services is a powerful
 capability highly sought after. For example,
 [GitHub deploys changes before they're merged](https://github.blog/2015-06-02-deploying-branches-to-github-com/).
@@ -144,9 +144,9 @@ take an engineering team seriously if they haven't figured out how
 their team members can get a change rapidly deployed.
 
 As Open Source, we have all the ingredients to have a decisive
-advantage here. To effectively collaborate on  **Open Source Services**, 
+advantage here. To effectively collaborate on  **Open Source Services**,
 contributors across humanity.
 
 Lets try to craft a playbook to achieve this basic capability
-that drives Open Source: The ability to change code and interact
-with that change ... on a service.
+that drives Open Source Software and apply it to Open Source Services:
+The ability to change code and interact with that change ... on a service.
