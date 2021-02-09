@@ -25,8 +25,9 @@ contributors effectively.
 Much of the value of a service comes from things other than the code.
 It comes from the infrastructure it runs on, the operational processes,
 the monitoring, the backups, the metrics, the high availability, the
-scalability. It comes from the network effect, with other users, with other
-interconnected services, from legal agreements, and so on.
+scalability. It comes from data, from the network effect, with other users,
+with other interconnected services, with integrated tools, from legal
+agreements, and so on.
 
 Any non-toy Service is not reproducible.
 
@@ -51,7 +52,7 @@ that change themselves.
 You still with me?
 
 Yes, that means opening a pull request against a running service
-and running that change before it's merged.
+and experiencing that change before it's merged.
 
 This is not as insane as it sounds.
 
