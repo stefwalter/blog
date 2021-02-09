@@ -143,10 +143,9 @@ take an engineering team seriously if they haven't figured out how
 their team members can get a change rapidly deployed.
 
 As Open Source, we have all the ingredients to have a decisive
-advantage here. To effectively collaborate on services with
+advantage here. To effectively collaborate on  **Open Source Services**, 
 contributors across humanity.
 
 Lets try to craft a playbook to achieve this basic capability
 that drives Open Source: The ability to change code and interact
 with that change ... on a service.
-
