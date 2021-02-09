@@ -1,11 +1,11 @@
 Title: Your Service is not Open Source
 Date: 2020-02-07 18:35
 Tags: open source, technical
-Slug: open-source-as-a-service
+Slug: open-source-services
 Category: Technical
-Summary: Sharing the source code to your SaaS is insufficient. We effectively enable users to contribute to the a running service for it to be Open Source.
+Summary: Open sourcing the code to your SaaS is insufficient. For a service to be truly Open Source, we need to effectively enable users to contribute to the SaaS itself.
 
-Sharing the source code to your SaaS is insufficient to make it
+Open Sourcing the code to your SaaS is insufficient to make it
 actually be Open Source. Sounds self-contradictory?
 
 Most services that espouse "Open Source", do so by simply
@@ -14,7 +14,7 @@ It's better than nothing, but really misses the point that powers
 Open Source: enabling users to make a change to the software
 they're using.
 
-Some other Open Source services, such as
+Some other popular services powered by Open Source software, such as
 [GitLab.com](https://about.gitlab.com/community/contribute/development/)
 or [ElasticSearch](https://www.elastic.co/about/free-and-open) do include
 the tools used to operate/deploy their service. Pause for applause 👏👏👏
@@ -43,9 +43,10 @@ the service itself. This leads to companies
 in a way that typical open source projects with a true community
 are resilient to.
 
-I believe that if we enable contributions to services, we reap
-the advantages of true Open Source. That means enabling users to make a
-change to a running service and experience that change themselves.
+I believe that if we enable contributions to services, *rather than just
+the software*, we reap the advantages of true Open Source. That means
+enabling users to make a change to a running service and experience
+that change themselves.
 
 You still with me?
 
@@ -93,7 +94,7 @@ processes are operated by someone else ... but because such users of
 a service have explicitly chosen not to be involved in operating
 the software.
 
-If the primary way to use [Postgres was as a Service](https://aws.amazon.com/rds/),
+If the primary way to use [Postgres was "as a Service"](https://aws.amazon.com/rds/),
 then that (fabulous) project would be starved for contributors. This is
 because the number of contributors in a such a project are a function
 of some small percentage of users deciding to try to make change.
