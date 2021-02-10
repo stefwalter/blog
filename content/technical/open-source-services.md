@@ -81,6 +81,8 @@ If you interrupt that principle, you starve Open Source. Software as a
 Service does just that: When someone else runs software for you, the
 intuitive mechanisms for users to change that software are unavailable.
 
+![How users become contributors](images/funneling-open-source-service.png)
+
 "But" you may say, "If the source code for that running service was **open**
 then I could still change it."
 
