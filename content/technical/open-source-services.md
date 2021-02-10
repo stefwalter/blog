@@ -1,5 +1,5 @@
 Title: Your Service is not Open Source
-Date: 2020-02-07 18:35
+Date: 2021-02-10 18:35
 Tags: open source, technical
 Slug: open-source-services
 Category: Technical
