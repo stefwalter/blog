@@ -17,7 +17,9 @@ they're using.
 Some other popular services powered by Open Source software, such as
 [GitLab.com](https://about.gitlab.com/community/contribute/development/)
 or [ElasticSearch](https://www.elastic.co/about/free-and-open) do include
-the tools used to operate/deploy their service. Pause for applause 👏👏👏
+the tools used to operate/deploy their service. Pause for applause
+
+👏👏👏
 
 But that's also insufficient to actually enable users to become
 contributors effectively.
@@ -153,3 +155,5 @@ contributors across humanity.
 Lets try to craft a playbook to achieve this basic capability
 that drives Open Source Software and apply it to Open Source Services:
 The ability to change code and interact with that change ... on a service.
+
+> Note: [Thanks to the reviewers of this article!](https://github.com/stefwalter/blog/pull/1)
